@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Тарифы — YouthBank</title>
+  <meta name="description" content="YouthBank — банк для молодёжи и предпринимателей. Быстрое открытие счёта, тарифы и инструменты для бизнеса." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-inner">
+      <a href="index.html" class="logo" aria-label="Главная">
+        <span style="display:inline-flex;align-items:center"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#2ABDC6"/><path d="M6 12h12v2H6z" fill="#fff"/></svg></span>
+        <span style="font-size:18px">YouthBank</span>
+      </a>
+      <nav class="site-nav" aria-label="Навигация">
+        <a href="dlya-molodezhi.html">Для молодёжи</a>
+        <a href="dlya-biznesa.html">Для бизнеса</a>
+        <a href="tarify.html">Тарифы</a>
+        <a href="podderzhka.html">Поддержка</a>
+        <a href="o-banke.html">О банке</a>
+      </nav>
+      <div style="display:flex;gap:12px;align-items:center">
+        <a class="btn-primary" href="signup.html">Открыть счёт</a>
+        <a class="btn-outline" href="login.html">Войти</a>
+        <button class="btn-ghost mobile-nav" aria-label="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="container">
+  <nav class="breadcrumbs"><a href="index.html">Главная</a> / <span>Тарифы</span></nav>
+  <h1 class="h1">Тарифы и условия</h1>
+  <div style="margin-top:12px">
+    <div class="card">
+      <h3 class="h3">Сравнение тарифов</h3>
+      <table aria-label="Сравнение тарифов">
+        <thead><tr><th>Тариф</th><th>Целевая аудитория</th><th>Комиссии</th></tr></thead>
+        <tbody>
+          <tr><td>Старт</td><td>Студенты</td><td>0 ₽ — базовый пакет</td></tr>
+          <tr><td>Профи</td><td>Фриланс</td><td>Низкие комиссии, расширенные инструменты</td></tr>
+          <tr><td>Бизнес</td><td>ИП / ООО</td><td>Подробно — в условиях</td></tr>
+        </tbody>
+      </table>
+      <div style="margin-top:12px"><a class="btn-outline" href="#calculator">Калькулятор доходности и кэшбэка</a></div>
+    </div>
+
+    <div id="calculator" class="card" style="margin-top:16px">
+      <h3 class="h3">Калькулятор кэшбэка</h3>
+      <p class="kicker">Введите средние траты в месяц и ожидаемый процент кэшбэка.</p>
+      <form id="cashback-form" style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+        <label>Средние траты в месяц (₽)<input id="monthly-spend" type="number" placeholder="20000" style="padding:10px;border:1px solid #E9ECEF;border-radius:8px"></label>
+        <label>Процент кэшбэка (%)<input id="cashback-rate" type="number" placeholder="2" style="padding:10px;border:1px solid #E9ECEF;border-radius:8px"></label>
+        <label>Период (мес)<input id="months" type="number" placeholder="12" style="padding:10px;border:1px solid #E9ECEF;border-radius:8px"></label>
+        <div style="display:flex;gap:8px;justify-content:flex-end">
+          <button class="btn-outline" type="reset">Сброс</button>
+          <button class="btn-primary" type="submit">Рассчитать</button>
+        </div>
+      </form>
+      <div id="cashback-result" style="margin-top:12px;color:var(--muted)"></div>
+    </div>
+
+  </div>
+</main>
+
+
+  <button id="chat-btn" class="chat-button" aria-label="Написать в чат">💬</button>
+  <div id="chat-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal" role="document" aria-labelledby="chat-title">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h3 id="chat-title" class="h3">Чат поддержки</h3>
+        <button id="chat-close" class="btn-ghost" aria-label="Закрыть">✕</button>
+      </div>
+      <p class="kicker">Операторы доступны 24/7. Это демоверсия чата.</p>
+      <form onsubmit="event.preventDefault()" style="margin-top:12px;display:flex;flex-direction:column;gap:8px;">
+        <input placeholder="Ваше имя" required style="padding:10px;border:1px solid #E9ECEF;border-radius:8px" />
+        <textarea placeholder="Опишите вопрос" rows="4" style="padding:10px;border:1px solid #E9ECEF;border-radius:8px"></textarea>
+        <div style="display:flex;gap:8px;justify-content:flex-end">
+          <button class="btn-outline" type="button" onclick="document.getElementById('chat-modal').style.display='none'">Отмена</button>
+          <button class="btn-primary" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div style="min-width:220px">
+          <a href="index.html" class="logo" aria-label="Главная">
+            <span style="display:inline-flex;align-items:center"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#2ABDC6"/><path d="M6 12h12v2H6z" fill="#fff"/></svg></span>
+            <div style="display:flex;flex-direction:column"><strong>YouthBank</strong><small class="kicker">Банк для молодёжи и предпринимателей</small></div>
+          </a>
+        </div>
+        <div style="display:flex;gap:32px;flex-wrap:wrap">
+          <div>
+            <strong>Продукты</strong>
+            <ul style="list-style:none;padding:0;margin:8px 0">
+              <li><a href="dlya-molodezhi.html">Для молодёжи</a></li>
+              <li><a href="dlya-biznesa.html">Для бизнеса</a></li>
+              <li><a href="tarify.html">Тарифы</a></li>
+            </ul>
+          </div>
+          <div>
+            <strong>Помощь</strong>
+            <ul style="list-style:none;padding:0;margin:8px 0">
+              <li><a href="podderzhka.html">FAQ</a></li>
+              <li><a href="podderzhka.html">Чат поддержки</a></li>
+            </ul>
+          </div>
+          <div>
+            <strong>О нас</strong>
+            <ul style="list-style:none;padding:0;margin:8px 0">
+              <li><a href="o-banke.html">О банке</a></li>
+              <li><a href="o-banke.html">Лицензии</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #E9ECEF;padding:18px 0;margin-top:18px">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <small class="kicker">© 2025 YouthBank — банковские услуги. Юридическая информация в разделе «О банке».</small>
+          <div style="display:flex;gap:12px"><a href="#">Политика конфиденциальности</a><a href="#">Публичная оферта</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
