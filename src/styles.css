@@ -1,0 +1,53 @@
+:root{
+  --accent-1: #2ABDC6;
+  --accent-1-dark: #229AA0;
+  --accent-2: #FF6B35;
+  --bg: #F8F9FA;
+  --text: #212529;
+  --muted: #6C757D;
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --radius: 12px;
+  --unit: 8px;
+  font-size: 16px;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: var(--text);
+  margin:0;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{background:white;box-shadow:0 1px 0 rgba(0,0,0,0.04);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent-1),var(--accent-2))}
+.nav{display:flex;gap:10px;align-items:center}
+.cta{display:flex;gap:8px}
+.btn{border-radius:12px;padding:10px 16px;min-height:48px;border:0;cursor:pointer;font-weight:600}
+.btn-primary{background:var(--accent-1);color:white}
+.btn-primary:active{background:var(--accent-1-dark)}
+.btn-ghost{background:transparent;border:2px solid var(--accent-1);color:var(--text)}
+.card{background:white;border-radius:12px;padding:16px;box-shadow:var(--card-shadow)}
+.grid{display:grid;gap:16px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+h1{font-size:28pt;margin:0}
+h2{font-size:22pt;margin:0}
+h3{font-size:18pt;margin:0}
+p{margin:8px 0}
+.footer{background:white;margin-top:24px;padding:20px}
+.breadcrumb{font-size:14px;color:var(--muted);margin-bottom:12px}
+.card-list{display:grid;gap:12px}
+@media(max-width:800px){
+  .grid-2{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+  .nav{display:none}
+}
+.visually-hidden{position:absolute!important;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}
+input[type='file']{padding:8px}
+a:focus,button:focus,input:focus{outline:3px solid rgba(43,189,198,0.25);outline-offset:2px}
