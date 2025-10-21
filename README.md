@@ -1,0 +1,1 @@
+# YouthBank — Updated Demo\n\nThis archive was updated to match the UI/UX and styling requirements provided by the user. It remains a frontend mock (static HTML/CSS).

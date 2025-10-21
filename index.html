@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>YouthBank — Банк для молодёжи и предпринимателей</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between">
+      <div style="display:flex;align-items:center">
+        <a href="index.html" class="logo" aria-label="Главная">
+          <div class="logo-box" aria-hidden></div>
+          <div style="margin-left:8px"><strong>YouthBank</strong><div style="font-size:12px;color:var(--muted)">Банк для молодёжи и предпринимателей</div></div>
+        </a>
+        <nav class="nav" aria-label="Главное меню">
+          <a href="dlya-molodezhi.html">Для молодёжи</a>
+          <a href="dlya-biznesa.html">Для бизнеса</a>
+          <a href="tarify.html">Тарифы</a>
+          <a href="podderzhka.html">Поддержка</a>
+          <a href="o-banke.html">О банке</a>
+        </nav>
+      </div>
+      <div class="cta">
+        <a class="btn btn-primary" href="signup.html">Открыть счёт</a>
+        <a class="btn btn-ghost" href="login.html">Вход</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Банк для молодёжи и предпринимателей</h1>
+    <p style="color:var(--muted)">Простые тарифы, быстрый запуск и инструменты для планирования — от первых зарплат до управления стартапом.</p>
+
+    <section style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px">
+      <div>
+        <div class="card">
+          <h2>Начать</h2>
+          <p>Открой счёт за минуты, настрой цель и начни копить.</p>
+          <div style="margin-top:12px">
+            <a class="btn btn-primary" href="signup.html">Открыть счёт</a>
+            <a class="btn btn-ghost" href="tarify.html">Подобрать тариф</a>
+          </div>
+        </div>
+        <div style="margin-top:12px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+          <div class="card">Без комиссий</div>
+          <div class="card">Мгновенное открытие</div>
+          <div class="card">Поддержка 24/7</div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Быстрый вход</h3>
+          <p style="color:var(--muted)">Вход через мобильное приложение или веб. Ваши данные под защитой.</p>
+          <img src="https://via.placeholder.com/420x260?text=App+Preview" alt="app preview" style="width:100%;border-radius:8px;margin-top:12px">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container" style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px">
+      <div>
+        <strong>YouthBank</strong>
+        <p style="color:var(--muted);font-size:14px">Прозрачно. Быстро. Без скрытых комиссий.</p>
+      </div>
+      <div>
+        <strong>Продукты</strong>
+        <ul>
+          <li><a href="dlya-molodezhi.html">Студенческие карты</a></li>
+          <li><a href="dlya-biznesa.html">Счёт для самозанятых</a></li>
+          <li><a href="tarify.html">Тарифы</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Поддержка</strong>
+        <ul>
+          <li><a href="podderzhka.html">FAQ</a></li>
+          <li><a href="podderzhka.html#contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Юридическая информация</strong>
+        <p style="color:var(--muted);font-size:14px">Лицензии, политики, реквизиты. © 2025 YouthBank</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
